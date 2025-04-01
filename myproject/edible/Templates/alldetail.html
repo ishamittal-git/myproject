@@ -1,0 +1,11 @@
+{% extends "master.html" %}
+
+{% block title %}
+Details about {{ factory.name }}
+{% endblock %}
+
+{% block content %}
+<h1>{{ factory.name }}</h1>
+<p>Phone: {{ factory.phone_number }}</p>
+<p>Back to <a href="/factories/">Factories List</a></p>
+{% endblock %}

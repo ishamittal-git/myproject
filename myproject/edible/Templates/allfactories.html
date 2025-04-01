@@ -1,0 +1,17 @@
+{% extends "master.html" %}
+
+{% block title %}
+Cutlery Factory - List of All Factories
+{% endblock %}
+
+{% block content %}
+<p><a href="/">HOME</a></p>
+<h1>Registered Cutlery Factories</h1>
+<ul>
+    {% for factory in factories %}
+        <li>
+            <a href="all_detail/{{ factory.id }}">{{ factory.name }} - {{ factory.phone_number }}</a>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}
