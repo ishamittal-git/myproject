@@ -5,7 +5,14 @@ Cutlery Factory Management
 {% endblock %}
 
 {% block content %}
-<h1>Cutlery Factory Management</h1>
-<h3>Factories</h3>
-<p>Check out all our <a href="factories/">registered factories</a></p>
+<div class="container-fluid bg-image text-white" style="background-image: url('/static/images/background.jpg'); background-size: cover; background-position: center; height: 100vh;">
+    <div class="container text-center d-flex flex-column justify-content-center align-items-center h-100">
+        <h1 class="display-4 fw-bold">Cutlery Factory Management</h1>
+        <h3 class="mt-4 fw-bold">Factories</h3>
+        <p class="mt-3 fw-bold">
+            Check out all our 
+            <a href="factories/" class="btn btn-primary btn-sm">Registered Factories</a>
+        </p>
+    </div>
+</div>
 {% endblock %}

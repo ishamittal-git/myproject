@@ -1,6 +1,8 @@
 from django.urls import path
-from .views import factories_list  # ✅ Corrected function name
+from . import views
 
 urlpatterns = [
-    path('factories/', factories_list, name='factory_list'),  # ✅ Use the correct function
+    path("", views.main, name="main"),
+    path('factories/', views.factories_list, name='factory_list'),
+    path('factories/<int:id>/', views.all_detail, name='all_detail'),
 ]

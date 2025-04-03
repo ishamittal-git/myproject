@@ -4,7 +4,7 @@ from .models import CutleryFactory  # Import the model
 
 def main(request):
     template = loader.get_template('main.html')  # Main homepage template
-    return HttpResponse(template.render())
+    return HttpResponse(template.render(None, request))
 
 def factories_list(request):
     factories = CutleryFactory.objects.all().values()  # Fetch all factories

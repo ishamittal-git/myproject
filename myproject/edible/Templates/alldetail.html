@@ -5,7 +5,15 @@ Details about {{ factory.name }}
 {% endblock %}
 
 {% block content %}
-<h1>{{ factory.name }}</h1>
-<p>Phone: {{ factory.phone_number }}</p>
-<p>Back to <a href="/factories/">Factories List</a></p>
+<div class="container-fluid text-white" style="background-color: #343a40; min-height: 100vh;">
+    <div class="container py-5">
+        <div class="card shadow-sm mb-4">
+            <div class="card-body">
+                <h1 class="card-title fw-bold">{{ factory.name }}</h1>
+                <p class="card-text"><strong>Phone:</strong> {{ factory.phone_number }}</p>
+                <a href="/factories/" class="btn btn-secondary btn-sm mt-3">Back to Factories List</a>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
