@@ -7,3 +7,7 @@ class CutleryFactory(models.Model):
     
     def __str__(self):
         return self.name  # Returns factory name in Django Admin & queries
+
+    class Meta:
+        verbose_name = "Cutlery Factory"
+        verbose_name_plural = "Cutlery Factories"
