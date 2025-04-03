@@ -7,7 +7,7 @@ Cutlery Factory - List of All Factories
 {% block content %}
 <div class="container-fluid text-white" style="background-color: #343a40; min-height: 100vh;">
     <div class="container">
-        <p><a href="/" class="btn btn-secondary btn-sm my-4">HOME</a></p>
+        <p><a href="/" class="btn btn-info btn-sm my-4">HOME</a></p>
         <h1 class="text-center mb-4">Registered Cutlery Factories</h1>
         <div class="row">
             {% for factory in factories %}
@@ -16,7 +16,7 @@ Cutlery Factory - List of All Factories
                     <div class="card-body">
                         <h5 class="card-title">{{ factory.name }}</h5>
                         <p class="card-text">Phone: {{ factory.phone_number }}</p>
-                        <a href="{{ factory.id }}" class="btn btn-primary btn-sm">View Details</a>
+                        <a href="{{ factory.id }}" class="btn btn-warning btn-sm">View Details</a>
                     </div>
                 </div>
             </div>
